@@ -1,0 +1,21 @@
+import math
+import random
+
+guess = 10
+
+words = ['boolean', 'operator', 'condition', 'variable', 'int', 'float']
+
+word = random.choice(words)
+
+print(words)
+
+
+while guess > 0:
+    user = input("Guess the word from the given list \n")
+    if user == word:
+        print("Awesome")
+    else:
+        print("Wrong word!")
+        guess = guess - 1
+else:
+    print("You lose")
